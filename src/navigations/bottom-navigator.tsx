@@ -3,8 +3,8 @@ import {BackHandler} from 'react-native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {useFocusEffect} from '@react-navigation/native';
 
-import Primary from '../scenes/primary';
-import Secondary from '../scenes/secondary';
+import Home from '../scenes/home';
+import RoomSelector from '../scenes/room-selector';
 import {MyToast} from '../components';
 
 const Tab = createBottomTabNavigator();
@@ -37,8 +37,8 @@ const BottomTabs = () => {
         duration={2000}
       />
       <Tab.Navigator tabBar={() => null} backBehavior="none">
-        <Tab.Screen name="Primary" component={Primary} />
-        <Tab.Screen name="Secondary" component={Secondary} />
+        <Tab.Screen name="Home" component={Home} />
+        <Tab.Screen name="RoomSelector" component={RoomSelector} />
       </Tab.Navigator>
     </>
   );

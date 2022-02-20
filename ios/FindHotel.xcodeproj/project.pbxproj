@@ -114,7 +114,6 @@
 				368DA5712BBEB9E419679EE8 /* Pods-FindHotel-FindHotelTests.debug.xcconfig */,
 				D83F31097F9E9D18991148FE /* Pods-FindHotel-FindHotelTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

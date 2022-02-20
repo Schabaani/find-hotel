@@ -11,16 +11,16 @@ export type BottomNavParamList = {
     screen?: keyof RootStackParamList;
     params?: {[k: string]: any};
   };
-  Primary: undefined;
-  Secondary: undefined;
+  RoomSelector: {params?: String};
+  Home: undefined;
 };
 
-export const RootStackRouteNames = ['Primary', 'About', 'Drawer'];
+export const RootStackRouteNames = ['RoomSelector', 'Home'];
 
 export type RootStackParamList = {
   About: undefined;
-  Primary: undefined;
-  Secondary: undefined;
+  Home: undefined;
+  RoomSelector?: {config?: string};
 };
 
 export const ValidRouteNames = [...BottomRouteNames, ...RootStackRouteNames];
