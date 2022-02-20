@@ -24,7 +24,7 @@ const AppStack = () => {
       <Stack.Screen name="Home" component={Home} />
       <Stack.Screen
         name="RoomSelector"
-        options={{presentation: 'modal'}}
+        options={{presentation: 'fullScreenModal'}}
         component={RoomSelector}
       />
     </Stack.Navigator>
