@@ -5,10 +5,10 @@ import {RootStackParamList} from '../../navigations/router';
 import {Colors} from '../../styles';
 
 interface IProps {
-  navigation: NativeStackNavigationProp<RootStackParamList, 'Primary'>;
+  navigation: NativeStackNavigationProp<RootStackParamList, 'Home'>;
 }
 
-export default function Primary({navigation}: IProps) {
+export default function Home({navigation}: IProps) {
   return <SafeAreaView style={styles.container}></SafeAreaView>;
 }
 

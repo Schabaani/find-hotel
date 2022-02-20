@@ -2,18 +2,20 @@ import React from 'react';
 import {View, StyleSheet, Dimensions} from 'react-native';
 import {StackNavigationProp} from '@react-navigation/stack';
 import {RootStackParamList} from '../../navigations/router';
+import {RouteProp} from '@react-navigation/native';
 
 const {width} = Dimensions.get('window');
 
 type TProps = {
-  navigation: StackNavigationProp<RootStackParamList>;
+  navigation: StackNavigationProp<RootStackParamList, 'RoomSelector'>;
+  route: RouteProp<RootStackParamList, 'RoomSelector'>;
 };
 
-const Secondary = (props: TProps) => {
-  return <View style={[Styles.container]} />;
+const RoomSelector = (props: TProps) => {
+  return <View style={[Styles.container]}></View>;
 };
 
-export default Secondary;
+export default RoomSelector;
 
 const Styles = StyleSheet.create({
   container: {

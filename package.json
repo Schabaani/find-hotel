@@ -11,6 +11,8 @@
     "clean:start": "npm start -- --reset-cache",
     "postinstall": "npx jetify",
     "adb": "adb reverse tcp:8081 tcp:8081",
+    "deeplink:ios": "npx uri-scheme open findhotel://app/room/1:0,13,16 --ios",
+    "deeplink:android": "npx uri-scheme open findhotel://app/room/1:0,13,16 --android",
     "android:bundle": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/"
   },
   "dependencies": {

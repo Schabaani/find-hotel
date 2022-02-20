@@ -4,8 +4,8 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import AsyncStorage from '@react-native-community/async-storage';
 import useTheme from '../utils/useTheme';
 
-import Primary from '../scenes/primary';
-import Secondary from '../scenes/secondary';
+import Home from '../scenes/home';
+import RoomSelector from '../scenes/room-selector';
 
 const Stack = createNativeStackNavigator();
 
@@ -21,8 +21,12 @@ const AppStack = () => {
 
   return (
     <Stack.Navigator screenOptions={{headerShown: false}}>
-      <Stack.Screen name="Primary" component={Primary} />
-      <Stack.Screen name="Secondary" component={Secondary} />
+      <Stack.Screen name="Home" component={Home} />
+      <Stack.Screen
+        name="RoomSelector"
+        options={{presentation: 'modal'}}
+        component={RoomSelector}
+      />
     </Stack.Navigator>
   );
 };
