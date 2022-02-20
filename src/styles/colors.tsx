@@ -1,8 +1,9 @@
 const PRIMARY = '#2e4057';
 const SECONDARY = '#767676';
 const WHITE = '#fff';
+const WHITE_GREY = '#F2F2F2';
 const BLACK = '#000';
-const BLUE = '#335fff';
+const BLUE = '#0077FF';
 const ORANGE = '#ffbf00';
 
 // ACTIONS
@@ -29,6 +30,7 @@ export default {
   PRIMARY,
   SECONDARY,
   WHITE,
+  WHITE_GREY,
   BLACK,
   BLUE,
   ORANGE,
