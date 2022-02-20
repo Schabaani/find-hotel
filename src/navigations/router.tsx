@@ -20,7 +20,7 @@ export const RootStackRouteNames = ['RoomSelector', 'Home'];
 export type RootStackParamList = {
   About: undefined;
   Home: undefined;
-  RoomSelector: {config?: String};
+  RoomSelector?: {config?: string};
 };
 
 export const ValidRouteNames = [...BottomRouteNames, ...RootStackRouteNames];
