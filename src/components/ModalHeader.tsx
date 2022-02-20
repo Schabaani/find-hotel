@@ -1,7 +1,7 @@
-import React, {PureComponent} from 'react';
-import {TouchableOpacity, Dimensions, Animated, Text, View} from 'react-native';
+import React from 'react';
+import {TouchableOpacity, Text, View} from 'react-native';
 import Styles from '../styles/components';
-import {MySvgImage} from './index';
+import MySvgImage from './MySvgImage';
 
 type TProps = {
   title: String;

@@ -1,7 +1,3 @@
-// shopp logo
-import ShoppLogo from './shopp-logo.svg';
-
-// icons
 import CloseIcon from './icons/close.svg';
 import AddIcon from './icons/add.svg';
 import SubtractIcon from './icons/subtract.svg';
