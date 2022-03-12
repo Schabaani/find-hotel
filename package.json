@@ -1,5 +1,5 @@
 {
-  "name": "FindHotel",
+  "name": "POKE",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -12,8 +12,6 @@
     "clean:start": "npm start -- --reset-cache",
     "postinstall": "npx jetify",
     "adb": "adb reverse tcp:8081 tcp:8081",
-    "deeplink:ios": "npx uri-scheme open findhotel://app/room/1:0,13,16 --ios",
-    "deeplink:android": "npx uri-scheme open findhotel://app/room/1:0,13,16 --android",
     "android:bundle": "react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/"
   },
   "dependencies": {
@@ -41,11 +39,7 @@
     "react-native-sensitive-info": "^5.5.8",
     "react-native-splash-screen": "^3.2.0",
     "react-native-svg": "^12.1.1",
-    "react-native-tab-view": "^3.1.1",
-    "react-redux": "^7.2.5",
-    "redux": "^4.1.1",
-    "redux-thunk": "^2.3.0",
-    "remote-redux-devtools": "^0.5.16"
+    "react-native-tab-view": "^3.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.16.12",

@@ -4,23 +4,10 @@ export type InitStackParamList = {
   AppNavigator: undefined;
 };
 
-export const BottomRouteNames = ['ShopFinder', 'Dashboard', 'Drawer'];
-
-export type BottomNavParamList = {
-  AppStack: {
-    screen?: keyof RootStackParamList;
-    params?: {[k: string]: any};
-  };
-  RoomSelector: {params?: String};
-  Home: undefined;
-};
-
-export const RootStackRouteNames = ['RoomSelector', 'Home'];
+export const RootStackRouteNames = ['SecondaryScreen', 'PrimaryScreen'];
 
 export type RootStackParamList = {
   About: undefined;
-  Home: undefined;
-  RoomSelector?: {config?: string};
+  PrimaryScreen: undefined;
+  SecondaryScreen?: {config?: string};
 };
-
-export const ValidRouteNames = [...BottomRouteNames, ...RootStackRouteNames];
