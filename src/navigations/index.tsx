@@ -5,7 +5,6 @@ import {
 } from '@react-navigation/native';
 import {ThemeContext} from '../utils/useTheme';
 import AppNavigator from './app-navigator';
-import linking from './linking';
 
 export default function AppNavigation() {
   const navigationRef = useRef<NavigationContainerRef<any>>(null);
@@ -33,7 +32,6 @@ export default function AppNavigation() {
   return (
     <ThemeContext.Provider value={{theme, setTheme}}>
       <NavigationContainer
-        linking={linking}
         ref={navigationRef}
         onReady={onReady}
         onStateChange={onStateChange}>
